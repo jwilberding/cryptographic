@@ -2,6 +2,9 @@
 %%% @author Erlware <core@erlware.org>
 %%% @copyright (C) 2008-2011, Erlware
 %%% @doc
+%%%  This entire module is deprecated and will be removed in a future
+%%%  release. Use the 'ecrypt' module instead.
+%%%
 %%%  Mathematical functions needed for cryptograpic functions but not supplied by Erlang standard libs.
 %%% @end
 %%%-------------------------------------------------------------------
@@ -9,6 +12,18 @@
 
 %% API
 -export([
+         primes/1,
+         prime/1,
+         is_prime/1,
+         coprime/2,
+         small_coprime/1,
+         floor/1,
+         exp_mod/3,
+         gcd/2,
+         extended_gcd/2
+        ]).
+
+-deprecated([
          primes/1,
          prime/1,
          is_prime/1,

@@ -2,6 +2,9 @@
 %%% @author Erlware <core@erlware.org>
 %%% @copyright (C) 2008-2011, Erlware
 %%% @doc
+%%%  This entire module is deprecated and will be removed in a future
+%%%  release. Use the 'ecrypt' module instead.
+%%%
 %%%  A pure Erlang version of the RSA public key cryptography algorithm.
 %%% @end
 %%%-------------------------------------------------------------------
@@ -9,6 +12,16 @@
 
 %% API
 -export([
+         keygen/0,
+         keygen/1,
+         keygen/2,
+         encrypt/3,
+         padded_encrypt/3,
+         decrypt/3,
+         padded_decrypt/3
+        ]).
+
+-deprecated([
          keygen/0,
          keygen/1,
          keygen/2,
